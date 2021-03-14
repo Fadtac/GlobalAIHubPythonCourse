@@ -1,0 +1,86 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'AD': 'Ali', 'SOYAD': 'Kar', 'YAŞ': 25, 'ALAN': 'ENDÜSTRİ MÜHENDİSLİĞİ', 'TECRÜBE': 'Var'}\n",
+      "{'AD': 'Ahmet', 'SOYAD': 'Ünal', 'YAŞ': 23, 'ALAN': 'Kimya Mühendisliği', 'TECRÜBE': 'Yok'}\n",
+      "{'AD': 'Emine ', 'SOYAD': 'Aslan', 'YAŞ': 22, 'ALAN': 'Makine Mühendisliği', 'TECRÜBE': 'YOK'}\n",
+      "{'AD': 'FADIL', 'SOYAD': 'TAÇ', 'YAŞ': 21, 'ALAN': 'ELEKTRİK ELEKTRONİK MÜHENDİSLİĞİ', 'TECRÜBE': 'YOK'}\n",
+      "{'AD': 'Görkem', 'SOYAD': 'Gündüz', 'YAŞ': 26, 'ALAN': 'Makine Mühendsiliği', 'TECRÜBE': 'Var'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#5 adet cv oluşturdum ve içerisine bilgileri girdim.\n",
+    "#(İlk halinde bilgileri kullanıcıdan alan bir formatta yazdım fakat ödeve uygun olması için değiştirdim.)\n",
+    "CV1={\n",
+    "    \"AD\":\"Ali\",\n",
+    "    \"SOYAD\":\"Kar\",\n",
+    "    \"YAŞ\":25,\n",
+    "    \"ALAN\":\"ENDÜSTRİ MÜHENDİSLİĞİ\",\n",
+    "    \"TECRÜBE\":\"Var\"\n",
+    "    \n",
+    "}\n",
+    "CV2={\n",
+    "    \"AD\":\"Ahmet\",\n",
+    "    \"SOYAD\":\"Ünal\",\n",
+    "    \"YAŞ\":23,\n",
+    "    \"ALAN\":\"Kimya Mühendisliği\",\n",
+    "    \"TECRÜBE\":\"Yok\"\n",
+    "}\n",
+    "CV3={\n",
+    "        \"AD\":\"Emine \",\n",
+    "    \"SOYAD\":\"Aslan\",\n",
+    "    \"YAŞ\":22,\n",
+    "    \"ALAN\":\"Makine Mühendisliği\",\n",
+    "    \"TECRÜBE\":\"YOK\"\n",
+    "}\n",
+    "CV4={\n",
+    "    \"AD\":\"FADIL\",\n",
+    "    \"SOYAD\":\"TAÇ\",\n",
+    "    \"YAŞ\":21,\n",
+    "    \"ALAN\":\"ELEKTRİK ELEKTRONİK MÜHENDİSLİĞİ\",\n",
+    "    \"TECRÜBE\":\"YOK\"\n",
+    "}\n",
+    "CV5={\n",
+    "    \"AD\":\"Görkem\",\n",
+    "    \"SOYAD\":\"Gündüz\",\n",
+    "    \"YAŞ\":26,\n",
+    "    \"ALAN\":\"Makine Mühendsiliği\",\n",
+    "    \"TECRÜBE\":\"Var\"\n",
+    "}\n",
+    "all={0:CV1,1:CV2,2:CV3,3:CV4,4:CV5}#5 cv'yi ortak bir sözlüğe yerleştirdim.Burada her bir value bir cv'yi tanımlamaktadır\n",
+    "for x in range(0,len(all)):        #tüm cvleri ekrana bastırması için bir döngü oluşturdum.\n",
+    "    print(all.get(x))              #0:cv1 de olduğu gibi burda 0 ın karşıdındaki cv1 değerini ekrana bastıracak"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
